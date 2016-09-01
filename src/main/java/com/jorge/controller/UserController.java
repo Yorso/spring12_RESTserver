@@ -48,7 +48,7 @@ import com.jorge.service.UserService;
 
 @RestController // Necessary for REST service, automatically convert the objects returned by the controller methods to JSON, 
                 // using the Jackson library. We needn't @Controller annotation
-@RequestMapping("users*") // Make url like http://localhost:8080/spring13_RESTserver/users (userList() method) or http://localhost:8080/spring13_RESTserver/users/2 (findUser(@PathVariable("id") Long userId) method)
+@RequestMapping("users*") // Make url like http://localhost:8080/spring12_RESTserver/users (userList() method) or http://localhost:8080/spring13_RESTserver/users/2 (findUser(@PathVariable("id") Long userId) method)
 public class UserController {
 	
 	/**************************************************************

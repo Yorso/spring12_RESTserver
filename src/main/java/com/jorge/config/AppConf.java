@@ -9,7 +9,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
 import com.jorge.service.UserService;
 
@@ -30,7 +29,7 @@ import com.jorge.service.UserService;
 // @Import({ DatabaseConfig.class, SecurityConfig.class }) => //If you are using a Spring application without a 'ServletInitializer' class,
 														      // you can include other configuration classes from your primary configuration class
 
-public class AppConf extends WebMvcConfigurerAdapter { // Extend from WebMvcConfigurerAdapter is necessary for interceptors
+public class AppConf{
 
 	 /***************************************************************************************************
 	  * Creating a REST service
